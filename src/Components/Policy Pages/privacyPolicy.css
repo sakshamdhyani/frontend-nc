@@ -1,0 +1,37 @@
+.privacyPolicyBody
+{
+    min-height: 100svh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 70px;
+    /* border: 1px solid red; */
+    padding: 4rem 3rem;
+}
+.privacyPolicyBody > h1
+{
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    font-weight: 700;
+}
+.privacyPolicyBody > h2
+{
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.privacyPolicyBody > p
+{
+    margin-top: 1rem;
+}
+
+@media (max-width : 600px)
+{
+    .privacyPolicyBody > p
+    {
+        font-size: 0.8rem;
+    }
+    
+    .privacyPolicyBody
+    {
+        padding: 1rem;
+    }
+}

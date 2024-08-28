@@ -1,0 +1,272 @@
+.pageHeading {
+  text-align: center;
+  font-size: 3.5rem;
+  text-decoration: underline;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+  user-select: none;
+}
+
+.managementBody {
+  margin-top: 5rem;
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.managementAboutContainer {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.managementImage, .managementDetail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+  min-height: 90vh;
+}
+
+.imgSlide, .detailSlide {
+  position: absolute;
+  width: 100%;
+  height: 80svh;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.7s ease-in-out, opacity 0.5s ease-in-out;
+  border: none;
+}
+
+.detailSlide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailContent {
+  margin-top: 4rem;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+  color: black;
+}
+
+.detailContent > h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.detailContent > h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.detailContent > h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.detailContent > p {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  width: 80%;
+  color: #555;
+}
+
+.imgSlide.active, .detailSlide.active {
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 2;
+}
+
+.imgSlide.prev, .detailSlide.prev {
+  opacity: 0;
+  z-index: 1;
+}
+
+.imgSlide.next, .detailSlide.next {
+  opacity: 0;
+  z-index: 1;
+}
+
+.imgSlide.prev {
+  transform: translateY(100%);
+}
+
+.imgSlide.next {
+  transform: translateY(-100%);
+}
+
+.detailSlide.prev {
+  transform: translateY(-100%);
+}
+
+.detailSlide.next {
+  transform: translateY(100%);
+}
+
+.managementPrevBtn, .managementNextBtn {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.178);
+  backdrop-filter: blur(5px);
+  color: rgba(54, 54, 54, 0.418);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.managementPrevBtn {
+  position: absolute;
+  left: 2rem;
+  z-index: 10000;
+  top: 45%;
+  background-color: black;
+  color: white;
+}
+
+.managementNextBtn {
+  position: absolute;
+  right: 2rem;
+  top: 45%;
+  z-index: 10000;
+  background-color: black;
+  color: white;
+}
+
+.managementPrevBtn:hover, .managementNextBtn:hover {
+  transition: all 0.2s ease;
+  opacity: 1;
+  backdrop-filter: blur(10px);
+}
+
+.managementImageContainer {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure any overflow is hidden */
+  border: none;
+}
+
+.managementImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Make sure the image covers the container while maintaining aspect ratio */
+  border: none;
+}
+
+.aboutUsContainer {
+  display: flex;
+  flex-direction: column; /* Default to column layout */
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.carouselContainer {
+  width: 100%;
+  height: 40rem; /* Set the height to be equal to the aboutPointsContainer */
+  overflow: hidden; /* Ensure any overflow is hidden */
+}
+
+.aboutPointsContainer {
+  width: 100%;
+  padding: 0 20px;
+  backdrop-filter: blur(10px);
+  overflow: auto;
+  height: 40rem; /* Set the height to be equal to the carouselContainer */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.bulletPoints {
+  margin-top: 1rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  list-style-type: none;
+}
+
+.managementContainer {
+  position: relative;
+  margin-top: 3rem;
+}
+
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .aboutUsContainer {
+    flex-direction: row; /* Change to row layout on larger screens */
+    justify-content: space-between;
+  }
+
+  .carouselContainer, .aboutPointsContainer {
+    overflow: auto;
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageHeading {
+    font-size: 2.5rem;
+  }
+
+  .managementPrevBtn, .managementNextBtn {
+    height: 3rem;
+    width: 3rem;
+    font-size: 0.8rem;
+  }
+
+  .detailContent > h1 {
+    font-size: 2.5rem;
+  }
+
+  .detailContent > h2 {
+    font-size: 1.2rem;
+  }
+
+  .detailContent > h3 {
+    font-size: 0.9rem;
+  }
+
+  .detailContent > p {
+    font-size: 0.9rem;
+  }
+
+  .carouselContainer, .aboutPointsContainer {
+    width: 100%;
+    overflow: auto;
+  }
+
+  .managementBody {
+    padding: 0 10px;
+  }
+
+  .managementAboutContainer{
+    flex-direction: column;
+  }
+  .managementImage, .managementDetail{
+    margin-top: -6rem;
+  }
+}

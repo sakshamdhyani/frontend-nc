@@ -1,0 +1,79 @@
+.productSpecsBody {
+    height: fit-content;
+    background-color: var(--background_color);
+    padding: 0 20px;
+    border-top: 1px solid rgb(155, 155, 155);
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .productSpecsHeading {
+    padding-top: 30px;
+  }
+  
+  .productSpecsTitle {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .productSpecsPicsContainer {
+    height: fit-content;
+    padding: 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    background-color: white;
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .productSpecsKeySpecs {
+    background-color: white;
+    border-radius: 1.6rem;
+    margin-top: 5rem;
+    padding: 50px 40px;
+    margin-bottom: 4rem;
+  }
+  
+  .productSpecsKeySpecsTitle {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(184, 184, 184);
+  }
+  
+  .productSpecsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .productSpecsContainerRow {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .productSpecsContainerCol {
+    flex: 1 1 50%; /* Each column takes 50% width */
+    margin: 20px 0;
+  }
+  
+  .productSpecsContainerCol > h3 {
+    font-size: 1.2rem;
+    color: rgb(90, 90, 90);
+  }
+  
+  .productSpecsContainerCol > p {
+    font-size: 1.5rem;
+  }
+  
+
+@media (max-width : 500px)
+{
+    .productSpecsTitle
+    {
+        font-size: 5vw;
+    }
+}

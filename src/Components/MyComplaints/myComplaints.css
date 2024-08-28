@@ -1,0 +1,86 @@
+.complaints {
+    padding: 20px;
+    margin-top: 4rem;
+    min-height: 80vh;
+}
+
+.complaints h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+
+.complaint-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.complaint-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.complaint-id, .complaint-date {
+    display: block;
+    font-size: 14px;
+    color: #666;
+}
+
+.complaint-status {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.complaint-status.pending {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+.complaint-status.resolved {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.complaint-body {
+    padding: 20px;
+}
+
+.complaint-details {
+    margin-bottom: 20px;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.product-name {
+    font-size: 16px;
+    color: #333;
+}
+
+.complaint-description {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}

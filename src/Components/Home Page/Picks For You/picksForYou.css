@@ -1,0 +1,158 @@
+.picksForYouBody {
+    margin-top: 2rem;
+    width: 100%;
+    /* border: 1px red solid; */
+}
+
+.picksForYouHeading {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.picksForYouSwiperBtns {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.picksForYouArrow {
+    background-color: #ddd;
+    color: #333; /* Set icon color */
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for background and icon color */
+    height: 5rem;
+    width: 5rem;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.picksForYouArrow:hover:not(.picksForYouArrowHidden) {
+    background-color: #ccc;
+    color: #000; /* Darken icon color on hover */
+}
+
+.picksForYouArrowHidden {
+    background-color: #f0f0f0;
+    color: #999; /* Lighter color for inactive state */
+    cursor: not-allowed;
+}
+
+.picksForYouArrowVisible {
+    display: flex;
+}
+
+.picksForYouCategories {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.picksForYouCategories > p {
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.5rem;
+}
+
+.selectedProductCategory {
+    background-color: var(--main_theme);
+    padding: 0 0.4rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.picksForYouProductsBody {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    align-items: start;
+    justify-content: start;
+    margin-top: 1rem;
+}
+
+.picksForYouProductsBodyChild {
+    display: flex;
+    width: max-content;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    align-items: start;
+    justify-content: start;
+}
+
+.picksForYouEventsBody {
+    margin-top: 6rem;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.no-products-message {
+    padding: 1rem;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 650px) {
+    .picksForYouHeading {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .picksForYouSwiperBtns {
+        display: flex;
+        justify-content: end;
+    }
+
+    .picksForYouArrow {
+        height: 10vw;
+        width: 10vw;
+        font-size: 8vw;
+    }
+
+    .picksForYouEventsBody {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .picksForYouCategories {
+        display: flex;
+        gap: 5px;
+    }
+
+    .picksForYouCategories > p {
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.1rem;
+        overflow: hidden;
+        font-size: 0.75rem;
+        padding: 5px 5px;
+        border-radius: 1rem;
+    }
+
+    .unSelectedProductCategory {
+        background-color: white;
+    }
+
+    .selectedProductCategory {
+        background-color: var(--main_theme);
+        color: white;
+    }
+}

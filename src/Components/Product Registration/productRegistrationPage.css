@@ -1,0 +1,123 @@
+.productRegistrationPageBody
+{
+    background-color: var(--background_color);
+    margin-top: 4.5rem;
+    padding: 20px;
+    /* border: 1px solid red; */
+    min-height: 100svh;
+    /* background-color: green; */
+}
+
+.productRegistrationPageHeading
+{
+    align-items: flex-end;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.productRegistrationTitle
+{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.productRegistrationSubTitle
+{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.productRegistrationRegister
+{
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: 1px solid black;
+    height: 4rem;
+    border-radius: 3rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s ease;
+    align-items: center;
+}
+.productRegistrationRegister:hover
+{
+    cursor: pointer;
+    color: white;
+    background-color: var(--main_theme);
+    border: 1px solid var(--main_theme);
+
+    transition: all 0.2s ease;
+}
+
+
+.productRegistrationWhyRegister
+{
+    margin-top: 8rem;
+    /* border: 1px solid green; */
+}
+
+.productRegistrationWhyRegisterTitle
+{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.productRegistrationWhyRegisterCards
+{
+    margin-top: 1rem;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.productRegistrationWhyRegisterCard
+{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+
+}
+.productRegistrationWhyRegisterCard > h1
+{
+    margin-top: 2rem;
+    /* border: 1px solid blue; */
+    font-weight: 100;
+    line-height: 2rem;
+    font-size: 2rem;
+
+    width: 100%;
+}
+.productRegistrationWhyRegisterCard > h2
+{
+    /* border: 1px solid blue; */
+    width: 100%;
+    margin-top: 1rem;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+.productRegistrationHowItWorks
+{
+    margin-top: 5rem;
+    /* border: 1px solid green; */
+}
+
+.productRegistrationHowItWorksTitle
+{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.productRegistrationHowItWorksCard
+{
+    /* border: 1px solid blue; */
+    justify-content: space-between;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}

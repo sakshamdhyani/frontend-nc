@@ -1,0 +1,90 @@
+.addressBookBody
+{
+    margin-top: 2rem;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.addressBookHeading
+{
+    padding: 0 20px;
+    font-size: 45px;
+    width: 100%;
+    border-bottom: 1px solid rgb(160, 160, 160);
+    margin-bottom: 5rem;
+}
+
+.addressBookAddBtn {
+    background-color: #ffd426; /* Replace with your green color */
+    color: white;
+    padding: 1rem;
+    border: 10px;
+    margin-top: 1rem;
+}
+
+.addressBookDialogBox {
+    margin-top: 5rem; /* Matches the previous inline style */
+}
+
+
+.addressBookContainer
+{
+    padding: 20px 40px;
+    height: max-content;
+    width: 90%;
+    background-color: white;
+    border-radius: 1.6rem;
+}
+
+.addressBookContainerRow
+{
+    width: 100%;
+    display: flex;
+}
+
+.addressBookContainerRowLeft
+{
+    width: 80%;
+    /* border: 1px solid green; */
+}
+.addressBookContainerRowLeft > h1
+{
+    font-size: 14px;
+}
+.addressBookContainerRowLeft > h2
+{
+    font-size: 20px;
+}
+
+.addressBookContainerRowRight
+{
+    width: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+}
+.addressBookRowEdit:hover
+{
+    cursor: pointer;
+    color: var(--main_theme);
+}
+
+.addressBookRowDelete:hover
+{
+    cursor: pointer;
+    color: red;
+}
+
+.addressBookContainerRow:not(:first-child)
+{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(146, 146, 146);
+}
+

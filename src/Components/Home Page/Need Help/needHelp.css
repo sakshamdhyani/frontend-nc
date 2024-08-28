@@ -1,0 +1,115 @@
+.needHelpBody {
+    margin-top: 7rem;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-bottom: 6rem;
+    border-top: 1px solid rgb(163, 163, 163);
+}
+
+.needHelpHeading {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.needHelpTitle {
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.needHelpSlideBtns {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.needHelpCategories {
+    margin-top: 1rem;
+    width: max-content;
+    display: flex;
+    gap: 20px;
+}
+
+.needHelpCategoryProducts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.needHelpEventCardsParent {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.needHelpSubHeading {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.needHelpOfferCardsParent {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.needHelpSignIn {
+    border: 1px black solid;
+    font-weight: 600;
+    width: 200px;
+    background-color: white;
+    border-radius: 3rem;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.needHelpSignIn:hover {
+    border: 1px solid var(--main_theme);
+    background-color: var(--main_theme);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.needHelpJoinUs {
+    font-weight: 600;
+    border: 1px solid var(--main_theme);
+    color: white;
+    width: 100px;
+    background-color: var(--main_theme);
+    border-radius: 3rem;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.needHelpJoinUs:hover {
+    border: 1px black solid;
+    width: 100px;
+    color: black;
+    background-color: white;
+    border-radius: 3rem;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .needHelpCardBody {
+        width: 48%;
+    }
+}
+
+@media (min-width: 992px) {
+    .needHelpCardBody {
+        width: 30%;
+    }
+}

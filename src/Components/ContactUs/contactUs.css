@@ -1,0 +1,103 @@
+.contact-us {
+    /* position: relative; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    background: #f4f7f9;
+    padding: 1rem;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+  }
+  
+  .contact-us-background {
+    /* position: absolute;
+    top: 0; */
+    margin-top: 60rem;
+    /* left: 0; */
+    /* border: 1px solid green; */
+    height: 100%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: fadeIn 2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-us-content {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    animation: slideUp 1s ease-out;
+  }
+  
+  .contact-us-content h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+    color: var(--main_theme);
+  }
+  
+  .contact-us-content p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .contact-form label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1em;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: var(--main_theme);
+    box-shadow: 0 0 10px var(--main_theme);
+    outline: none;
+  }
+  
+  .contact-form button , .home-button{
+    background: var(--main_theme);
+    color: white;
+    padding: 12px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }

@@ -1,0 +1,25 @@
+.becomeAMosetaMemberOfferCardBody
+{
+    height: 250px;
+    width: 400px;
+    border-radius: 1.5rem;
+    background-color: var(--secondary_color);
+}
+
+@media (max-width : 800px)
+{
+    .becomeAMosetaMemberOfferCardBody
+    {
+        width: 60%;
+    }
+    
+}
+
+@media (max-width : 500px)
+{
+    
+    .becomeAMosetaMemberOfferCardBody
+    {
+        width: 100%;
+    }
+}

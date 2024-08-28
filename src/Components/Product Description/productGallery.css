@@ -1,0 +1,30 @@
+.productGalleryBody
+{
+    height: max-content;
+    background-color: var(--background_color);
+    padding: 0 20px;
+    margin-bottom: 5rem;
+    /* border: 1px solid green; */
+    /* padding-bottom: 3rem; */
+}
+
+.productGalleryHeading
+{
+    padding-top: 30px;
+}
+
+.productGalleryTitle
+{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.productGalleryPicsContainer
+{
+    height: max-content;
+    background-color: white;
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,220 @@
+.card {
+  --accent-color: #ffd426;
+  position: relative;
+  width: 100%;
+  max-width: 240px;
+  height: 380px; /* Fixed height */
+  background: white;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 50px 30px -20px;
+  transition: all 0.5s ease-in-out;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    max-width: 350px;
+  }
+}
+
+.card .image-container {
+  position: relative;
+  width: 100%;
+  height: 180px; /* Fixed height */
+  border-radius: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.card .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card .image-container .price {
+  position: absolute;
+  right: 0.7rem;
+  bottom: -1rem;
+  background: white;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 1rem 1rem 2rem 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 15px 0px;
+}
+
+.card .content {
+  padding: 0px 0.8rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .content .brand {
+  font-weight: 900;
+  color: #a6a6a6;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card .content .product-name {
+  font-weight: 700;
+  color: #666666;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Show two lines of text before truncating */
+  -webkit-box-orient: vertical;
+}
+
+@media (min-width: 768px) {
+  .card .content .brand {
+    font-size: 1rem;
+  }
+
+  .card .content .product-name {
+    font-size: 0.9rem;
+  }
+}
+
+.card .content .rating {
+  color: #a8a8a8;
+  font-size: 0.6rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card .content .rating svg {
+  height: 12px;
+}
+
+/* Button Container */
+.card .button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+/* Buy Now Button */
+.card .button {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .button:hover {
+    background-color: #e5b800;
+    transform: scale(1.05);
+}
+
+/* Add to Cart Button */
+.card .button svg {
+    width: 15px;
+    fill: white;
+    margin-right: 0.3rem;
+}
+
+.card .button-container .cart-button {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4caf50;
+    border-radius: 0.7rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.card .button-container .cart-button:hover {
+    background-color: #43a047;
+    transform: scale(1.05);
+}
+
+.card .button-container .cart-button svg {
+    fill: white;
+}
+
+@media (min-width: 768px) {
+  .card .button {
+    flex: 1;
+  }
+
+  .card .button-container .cart-button {
+    width: 50px;
+  }
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+@keyframes bouncing {
+  from, to {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(1.5, 2.1);
+  }
+
+  50% {
+    transform: scale(2.1, 1.5);
+  }
+
+  75% {
+    transform: scale(1.5, 2.05);
+  }
+}
+
+
+
+
+
+/* Add this to your CSS file */
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem;
+  scroll-snap-type: x mandatory; /* Optional: adds snapping effect */
+}
+
+.card-container::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+.card {
+  flex: 0 0 auto; /* Prevent cards from shrinking or growing */
+  margin-right: 1rem; /* Space between cards */
+}

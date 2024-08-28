@@ -1,0 +1,33 @@
+.searchPageBody
+{
+
+    min-height: 100svh;
+    background-color: var(--background_color);
+    margin-top: 4.4rem;
+}
+
+.searchPageInput
+{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.searchPageInput > input
+{
+    margin-top: 2rem;
+    width: 80%;
+    height: 4rem;
+    border-radius: 2rem;
+    padding: 10px 30px;
+}
+
+.searchPageProductContainer
+{
+    padding-top: 3rem;
+    /* border: 1px solid red; */
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

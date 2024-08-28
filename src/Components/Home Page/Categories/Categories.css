@@ -1,0 +1,93 @@
+.categoriesContainer {
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.categoryCardsWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categoryCardsContainer {
+    width: 100%;
+    /* border: 1px solid red; */
+    overflow-x: hidden; /* Hide scrollbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 1rem;
+    scroll-behavior: smooth;
+}
+
+.categoryCard {
+    flex: 0 0 45%;
+    max-width: 300px;
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    background-color: white;
+}
+
+.categoryCard:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+    /* Removed scale transformation */
+}
+
+@media (min-width: 768px) {
+    .categoryCard {
+        flex: 0 0 30%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .categoryCard {
+        flex: 0 0 22%;
+    }
+}
+
+.scrollButtons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.scrollButton {
+    background-color: #ddd;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.scrollButton.left {
+    /* Specific styles for left button (optional) */
+}
+
+.scrollButton.right {
+    /* Specific styles for right button (optional) */
+}
+
+.scrollButton:hover:not(.inactive) {
+    background-color: #ccc;
+}
+
+.scrollButton.inactive {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}

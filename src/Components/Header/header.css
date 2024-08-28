@@ -1,0 +1,673 @@
+.headerBody {
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    background-color: transparent;
+    transition: background-color 0.5s ease; /* Smooth transition */
+    z-index: 100000000000000000000000;
+}
+
+.headerBody.scrolled {
+    background-color: white; /* Change background color on scroll */
+}
+
+
+.leftHeaderLogo
+{
+    margin-left: 20px;
+}
+
+.leftHeader
+{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.midHeaderBtn
+{
+    height: 100%;
+    font-size: 1.2rem;
+    letter-spacing: -1px;
+    color : black;
+    border-top: 1px solid transparent;
+    border: none;
+    /* border: 1px solid green; */
+    height: max-content;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+}
+
+.midHeader
+{
+    font-size: 1rem;
+    margin-left: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.midHeaderBtn:hover
+{
+    border-bottom: 1px solid var(--main_theme);
+}
+
+.rightHeader
+{
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    gap: 20px;
+
+    /* border: 1px solid green; */
+}
+
+
+.rightHeaderBtn
+{
+    background-color: white;
+    border: none;
+    outline: none;
+    /* border: 1px solid black; */
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.rightHeaderBtn:hover
+{
+    border: 1px solid var(--main_theme);
+    background-color: var(--main_theme);
+    color: white;
+}
+
+.rightHeaderIcon
+{
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.rightHeader > div:hover
+{
+    color: var(--main_theme);
+}
+
+.rightHeaderBurgerMenu
+{
+    display: none;
+}
+
+
+/* hover effects */
+
+.midHeaderShopHover,
+.midHeaderPowerPlantHover,
+.midHeaderHomeAppliancesHover,
+.midHeaderInverterHover,
+.midHeaderComputingHover,
+.midHeaderSupportHover
+{
+    /* font-size: 1rem; */
+    min-height: max-content;
+    min-width: 100svw;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    background-color: var(--background_color);
+    display: none;
+    padding-bottom: 20px;
+    /* border-bottom: 1px solid rgb(105, 105, 105); */
+
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.603);
+}
+
+.headerMainBtns
+{
+    height: 70px;
+    /* border: 1px solid green; */
+}
+
+
+.rightHeaderAccountTooltip
+{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 101;
+    background-color: red;
+    display: none;
+}
+
+
+.headerShopBtn:hover .midHeaderShopHover,
+.headerPowerPlantBtn:hover .midHeaderPowerPlantHover,
+.headerInverterBtn:hover .midHeaderInverterHover,
+.headerHomeAppliancesBtn:hover .midHeaderHomeAppliancesHover,
+.headerComputingBtn:hover .midHeaderComputingHover,
+.headerSupportBtn:hover .midHeaderSupportHover
+{
+    display: block;
+}
+
+.headerMainBtns:hover .midHeaderBtn
+{
+    border-bottom: 1px solid var(--main_theme);
+}
+
+
+.headerShopBtn:hover .midHeaderShopHover,
+.headerTvBtn:hover .midHeaderTvAudioHover,
+.headerAirSolutionsBtn:hover .midHeaderAirSolHover,
+.headerHomeAppliancesBtn:hover .midHeaderHomeAppHover,
+.headerComputingBtn:hover .midHeaderComputingHover,
+.headerSupportBtn:hover .midHeaderSupportHover
+{
+
+}
+
+
+
+.hoverDiv {
+    display: none;
+}
+
+
+.loggedInIcon:hover .hoverDiv {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 0.9rem;
+    gap: 0.5rem;
+    bottom: -60px;
+    right: 40px;
+    padding: 1rem 0.5rem;
+    color: black;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.hoverDiv a:hover , .hoverDiv button:hover {
+    text-decoration: underline;
+
+}
+
+/* Optional: Adjust styling for the icon */
+.loggedInIconIcon {
+    position: relative;
+    font-size: 1.4rem; /* Adjust size as needed */
+    /* border: 1px solid black; */
+}
+
+
+.openNavbarBody,
+.closeNavbarBodyParent
+{
+    display: none;
+}
+
+.openNavbarContent,
+.closeNavbarContent
+{
+    display: none;
+}
+
+.openNavbarBodyParent
+{
+    display: none;
+}
+
+.openNavbarContent > button
+{
+    
+}
+
+
+.headerBody
+{
+    height: max-content;
+    /* width: 100%; */
+    /* padding: 0 20px; */
+    background-color: transparent;
+}
+
+.headerCategoriesBody
+{
+    padding: 0 20px;
+    height: max-content;
+    border-top: 1px solid rgb(136, 136, 136);
+
+    display: flex;
+}
+
+.headerCategoryColumn
+{
+    margin: 0 10px;
+    display: flex;
+    /* justify-content: center; */
+    height: 100%;
+    /* align-items: center; */
+    width: 100%;
+    flex-direction: column;
+    /* border: 1px solid green; */
+}
+
+li
+{
+    list-style: none;
+}
+
+.headerCategoryColumn > h1
+{
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: 600;
+    /* border: 1px solid blue; */
+    display: flex;
+    width: fit-content;
+}
+
+.headerCategoryColumn > ul > li
+{
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: left;
+    width: fit-content;
+    /* border: 1px solid red; */
+}
+
+.headerCategoryColumn > ul > li:hover
+{
+    border-bottom: 1px solid black;
+}
+
+.headerCategoryColumn > ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    /* border: 1px solid black; */
+}
+
+.headerLanguageSection
+{
+    /* margin-left: 20px; */
+    margin-top: 3rem;
+    height: 5rem;
+    border-top: 1px solid rgb(105, 105, 105);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLanguage
+{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.headerLanguage > p
+{
+    display: flex;
+    align-items: center;
+}
+
+.headerSocialHandles
+{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid green; */
+}
+.headerSocialHandles > p
+{
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    font-size: 1rem;
+
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerEnding
+{
+    /* height: 5rem; */
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.headerEndingBtns
+{
+    padding-top: 1.5rem;
+}
+
+
+.headerEndingBtns > button
+{
+    font-size: 0.9rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 0 20px;
+}
+.headerEndingBtns > button > p:hover
+{
+    border-bottom: 1px solid white;
+}
+.headerEndingBtns > button:not(:first-child)
+{
+    border-left: 1px solid rgb(92, 92, 92);
+}
+
+.headerEndingCopyright > p
+{
+    margin-top: 1rem;
+    margin-left: 20px;
+}
+
+
+
+@media (max-width:1100px) 
+{
+    .rightHeaderBurgerMenu
+    {
+        display: block;
+    }
+
+    .midHeader
+    {
+        display: none;
+    }
+
+    .rightHeaderForBusinessBtn
+    {
+        display: none;
+    }
+
+    .openNavbarBodyParent
+    {
+        display: block;
+        position: absolute;
+        background-color: rgba(0, 0, 255, 0);
+        height: calc(100svh - 70px);
+        display: flex;
+
+        backdrop-filter: blur(5px);
+        justify-content: right;
+        width: 100%;
+        top: 70px;
+        overflow: hidden;
+    }
+
+    .ipPIWL
+    {
+        background: transparent !important;
+        font-size: 1rem !important;
+        width: max-content !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        height: 40px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        color: black !important;
+    }
+
+    .sideBarWrap::-webkit-scrollbar
+    {
+        width: 0;
+        height: 0;
+    }
+
+    .openNavbarCloseBtn
+    {
+        /* background-color: blue; */
+        height: 3rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    .openNavbarCloseIcon
+    {
+        cursor: pointer;
+    }
+
+    .hamburgerIcon
+    {
+        color: black !important;
+    }
+
+    .openNavbarCloseBtnChild
+    {
+        background-color: green;
+    }
+
+    .openNavbarIcons
+    {
+        /* background-color: green; */
+        display: flex;
+        align-items: center;
+    }
+    .hXYhNF
+    {
+        background-color: transparent !important;
+    }
+
+    .closeNavbarBodyParent
+    {
+        display: none;
+    }
+
+    .openNavbarContent
+    {
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 100%;
+        height: 100%;
+        background-color: var(--background_color);
+    }
+
+    .closeNavbarContent
+    {
+        display: none;
+    }
+
+    .openNavbarContent > .openNavbarButtonPatent
+    {
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .openNavbarContent > h1 > p,
+    .openNavbarContent > a > p
+    {
+        /* border: 1px solid red; */
+        height: 2px;
+        width: 0%;
+        background-color: rgb(0, 0, 0);
+        transition: width 0.2s ease-in;
+    }
+
+    .openNavbarContent > h1:hover > p,
+    .openNavbarContent > a:hover > p
+    {
+        width: 100%;
+        transition: width 0.2s ease-in;
+    }
+    .openNavbarContent > a
+    {
+        /* border: 10px solid green; */
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+    .openNavbarContent > h1
+    {
+        font-weight: 500;
+        font-size: 1.2rem;
+        width: max-content;
+        cursor: pointer;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        /* border: 1px solid red; */
+        /* border-bottom: 1px solid red; */
+    }
+
+    .openNavbarBusinessBtn
+    {
+        border: 1px solid var(--main_theme);
+        background-color: var(--main_theme);
+        margin-top: 1rem;
+        height: 3rem;
+        padding: 0 1rem;
+        border-radius: 1rem;
+        color: white;
+        transition: all 0.2s ease;
+    }
+    .openNavbarBusinessBtn:hover
+    {
+        border: 1px solid black;
+        background-color: white;
+        color: black;
+        transition: all 0.2s ease;
+    }
+
+    .activeBurgerMenu
+    {
+        color: var(--main_theme);
+    }
+
+    .openNavbarOptions
+    {
+        width: 100%;
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content:end;
+    }
+    .openNavbarOptions > option
+    {
+        width: 100px;
+    }
+    .openNavbarOptions > select
+    {
+        width:100%;
+        background-color: transparent;
+        border: none;
+        z-index: 1;
+        outline: none;
+        border: 1px solid blue;
+    }
+    
+    .openNavbarOptions > label
+    {
+        position: absolute;
+        right: 2rem;
+        border: 1px solid blue;
+    }
+
+    .showNavHeadingMore
+    {
+        background-color: red;
+        color: white;
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .hideNavHeadingMore
+    {
+        display: none;
+    }
+
+    .hideOpenNavheading
+    {
+        display: none;
+    }
+}
+
+.openNavbarNotification
+{
+    display: none;
+}
+
+.openNavbarCart
+{
+    display: none;
+}
+
+.rightHeaderCart
+{
+    margin-right: 1rem;
+}
+
+
+
+.cartIconContainer{
+    position: relative;
+}
+
+.cartItemNumber{
+    position: absolute;
+    top: -10px;
+    right: 1px;
+    font-size: 0.5rem;
+}
+
+@media (max-width : 450px)
+{
+    .openNavbarNotification
+    {
+        display: block;
+    }
+
+    .openNavbarCart
+    {
+        display: block;
+    }
+    .rightHeaderNotifications
+    {
+        display: none;
+    }
+
+    .rightHeaderCart
+    {
+        display: none;
+    }
+}

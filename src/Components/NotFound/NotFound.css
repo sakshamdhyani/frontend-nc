@@ -1,0 +1,85 @@
+.notFoundContainer {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem; /* Add padding for smaller screens */
+}
+
+.notFoundTextContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 90%; /* Add max-width for smaller screens */
+}
+
+.oopsText {
+    letter-spacing: 0.6rem;
+    background-color: #2f8d46;
+    background-image:  url("https://as2.ftcdn.net/v2/jpg/07/06/98/99/1000_F_706989960_8b6ri2FFVg4IFIFJ6MZp6b8enDjwxMPE.jpg");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 120px;
+    font-family: 'Steelfish Rg', 'helvetica neue', helvetica, arial, sans-serif;
+    font-weight: 800;
+}
+
+.text404 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.message404 {
+    width: 25rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.homeBtn {
+    background-color: white;
+    padding: 1rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .oopsText {
+        font-size: 80px; /* Smaller font size for smaller screens */
+        letter-spacing: 0.4rem;
+    }
+
+    .text404 {
+        font-size: 1.2rem; /* Smaller font size for smaller screens */
+    }
+
+    .message404 {
+        width: 100%; /* Full width for smaller screens */
+        padding: 0.5rem 0;
+    }
+
+    .homeBtn {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .oopsText {
+        font-size: 60px; /* Even smaller font size for mobile screens */
+        letter-spacing: 0.3rem;
+    }
+
+    .text404 {
+        font-size: 1rem; /* Even smaller font size for mobile screens */
+    }
+
+    .message404 {
+        font-size: 0.9rem; /* Smaller font size for mobile screens */
+        padding: 0.5rem 0;
+    }
+
+    .homeBtn {
+        padding: 0.6rem;
+    }
+}

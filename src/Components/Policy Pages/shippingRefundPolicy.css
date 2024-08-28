@@ -1,0 +1,50 @@
+.shippingRefundPolicyBody
+{
+    min-height: 100svh;
+    width: 100%;
+    margin-top: 70px;
+    padding: 4rem 3rem;
+}
+
+.shippingRefundPolicyBody > h1
+{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.shippingRefundPolicyBody > h2
+{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+.shippingRefundPolicyBody > p
+{
+    font-size: 1rem;
+    /* font-weight: 600; */
+    /* margin: 1rem 0; */
+}
+.shippingRefundPolicyBody li
+{
+    list-style: circle;
+    font-size: 1rem;
+    margin-left: 2rem;
+}
+
+
+@media (max-width : 600px)
+{
+    .shippingRefundPolicyBody
+    {
+        padding: 1rem;
+    }
+    .shippingRefundPolicyBody > p
+    {
+        margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+    .shippingRefundPolicyBody li
+    {
+        font-size: 0.8rem;
+    }
+}

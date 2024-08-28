@@ -1,0 +1,7 @@
+.productPageBody
+{
+    margin-top: 5rem;
+    min-height: 100svh;
+    background-color: var(--background_color);
+}
+

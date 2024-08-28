@@ -1,0 +1,16 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    background-color: white;
+}
+
+body
+{
+    position: relative;
+    /* overflow: hidden; */
+}

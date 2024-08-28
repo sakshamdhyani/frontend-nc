@@ -1,0 +1,128 @@
+/* productFeatures.css */
+.productFeaturesBody {
+    margin-top: 11rem;
+    min-height: 100vh; /* Use min-height to ensure content expands if needed */
+    background-color: var(--background_color); /* Replace with your background color variable */
+    padding: 0 20px;
+    margin-bottom: 5rem;
+}
+
+.productFeaturesHeading {
+    height: auto; /* Adjust as needed */
+    display: flex;
+}
+
+.productFeaturesLeft {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start; /* Adjust alignment */
+    margin-top: 2rem;
+    padding-left: 20px;
+    gap: 1rem;
+}
+
+.productFeaturesRating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.productFeaturesName {
+    font-size: 40px;
+}
+
+.productFeaturesRight {
+    height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productFeaturesImageParent {
+    width: 400px;
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+
+.productFeaturesImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.productFeaturesHighlights {
+    margin-top: 1rem; /* Adjust spacing */
+}
+
+.productFeaturesHighlights h3 {
+    font-size: 24px; /* Adjust heading size */
+    font-weight: bold;
+}
+
+.productFeaturesHighlights ul {
+    list-style-type: disc; /* Use disc or other type as needed */
+    padding-left: 20px; /* Adjust indentation */
+}
+
+.productFeaturesHighlights li {
+    font-size: 18px; /* Adjust font size */
+    line-height: 1.5; /* Adjust line height */
+}
+
+
+@media (max-width : 1055px)
+{
+    .productFeaturesBody
+    {
+        /* border: 1px solid red; */
+        margin-top: 2rem;
+        /* display: flex;
+        flex-direction: column; */
+    }
+}
+
+.productFeaturesHighlightTitle
+{
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+@media (max-width : 700px)
+{
+    .productFeaturesBody
+    {
+        margin-top: 6rem;
+        /* border: 1px solid green; */
+        /* overflow: hidden; */
+        /* display: flex;
+        flex-direction: column; */
+    }
+
+    .productFeaturesHeading
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .productFeaturesName
+    {
+        font-size: 6vw;
+    }
+
+    .productFeaturesHighlightTitle
+    {
+        font-size: 6vw;
+        font-weight: 600;
+    }
+
+    .list-disc
+    {
+        font-size: 3vw;
+    }
+}

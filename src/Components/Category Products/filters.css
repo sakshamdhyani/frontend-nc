@@ -1,0 +1,67 @@
+.filters {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.filtersTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.filterSubCategories {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filterCheckbox {
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filterCheckbox:hover {
+  background-color: #e6e6e6;
+}
+
+.filterCheckbox label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkboxIcon {
+  font-size: 1.2rem;
+  color: #333;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.checkboxIcon.checked {
+  color: #007bff;
+}
+
+.subcategoryName {
+  font-size: 1rem;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.filterCheckbox:hover .subcategoryName {
+  color: #007bff;
+}
+
+input[type="checkbox"] {
+  display: none;
+}

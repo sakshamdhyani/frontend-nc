@@ -1,0 +1,103 @@
+.searchPageCardBody
+{
+    cursor: pointer;
+    /* border: 1px solid rgb(208, 216, 208); */
+    background-color: var(--secondary_color);
+    min-height: 200px;
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    border-radius: 1.6rem;
+    overflow: hidden;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+}
+.searchPageCardBody:hover
+{
+    box-shadow: 1px 1px 10px rgb(153, 153, 153);
+    transition: all 0.2s ease;
+}
+
+.searchPageCardLeft
+{
+    width: 200px;
+    /* border: 1px solid red; */
+    margin-left: 2rem;
+}
+
+.searchPageCardLeft > img
+{
+    width: 100%;
+
+}
+
+.searchPageCardMid
+{
+    width: calc(100% - 200px - 230px);
+    /* border: 1px solid blue; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.searchPageCardMid > h1
+{
+    margin-top: 20px;
+    /* border: 1px solid green; */
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.searchPageCardMid > p
+{
+    /* border: 1px solid red; */
+    margin-bottom: 2rem;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.searchPageCardRight
+{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+}
+.searchPageCardRight > button
+{
+    border-radius: 2rem;
+    height: 3rem;
+    padding: 10px;
+}
+
+.searchPageCardLearnMore
+{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: all 0.2s ease;
+}
+.searchPageCardLearnMore:hover
+{
+    background-color: var(--main_theme);
+    color: white;
+    border: 1px solid var(--main_theme);
+    transition: all 0.2s ease;
+}
+
+.searchPageCardBuyNow:hover
+{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: all 0.2s ease;
+}
+.searchPageCardBuyNow
+{
+    border: 1px solid var(--main_theme);
+    background-color: var(--main_theme);
+    color: white;
+    transition: all 0.2s ease;
+}

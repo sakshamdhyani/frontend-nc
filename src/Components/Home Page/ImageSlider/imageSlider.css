@@ -1,0 +1,26 @@
+/* Custom styles for carousel control buttons */
+.carousel-control-prev, 
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5); /* Change background color */
+  width: 50px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Change the icon color */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* This will change the icon color to white */
+}
+
+/* Hover effects for the buttons */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darken background on hover */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  filter: invert(0.8); /* Slightly lighten the icon color on hover */
+}

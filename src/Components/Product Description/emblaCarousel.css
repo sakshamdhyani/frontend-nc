@@ -1,0 +1,129 @@
+.embla {
+  padding: 1rem;
+  max-width: 100%;
+  max-height: 80svh;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  padding: 1rem;
+  height: 60vh;
+  position: relative;
+}
+
+.embla__container {
+  display: flex;
+  height: 100%;
+}
+
+.embla__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  height: 100%;
+}
+
+.embla__slide__img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.embla-thumbs {
+  --thumbs-slide-spacing: 0.8rem;
+  --thumbs-slide-height: 6rem;
+  margin-top: var(--thumbs-slide-spacing);
+}
+
+.embla-thumbs__viewport {
+  overflow: hidden;
+}
+
+.embla-thumbs__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: calc(var(--thumbs-slide-spacing) * -1);
+}
+
+.embla-thumbs__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 22%;
+  min-width: 0;
+  padding-left: var(--thumbs-slide-spacing);
+}
+
+@media (min-width: 576px) {
+  .embla-thumbs__slide {
+    flex: 0 0 15%;
+  }
+}
+
+.embla-thumbs__slide__number {
+  border-radius: 10px;
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--detail-high-contrast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+}
+
+.embla-thumbs__slide--selected .embla-thumbs__slide__number {
+  color: var(--text-body);
+}
+
+@media (max-width: 900px) {
+  .embla-thumbs {
+    display: none;
+  }
+
+  .embla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .embla__viewport {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: calc(100%);
+  }
+  
+  .embla__container {
+    height: 100%;
+    width: calc(100%);
+  }
+
+  .embla__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 40px);
+    height: 100%;
+  }
+
+  .embla__slide__img {
+    width: calc(100% - 0px);
+    height: 50vw;
+  }
+}

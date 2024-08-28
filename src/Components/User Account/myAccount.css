@@ -1,0 +1,57 @@
+.myAccountBody
+{
+    min-height: 100svh;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.myAccountContainer
+{
+    margin-top: 70px;
+    height: max-content;
+    width: 90%;
+    background-color: white;
+    border-radius: 1.6rem;
+    padding: 40px 20px;
+}
+
+.myAccountContainerRow
+{
+    width: 100%;
+    min-height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+}
+.myAccountContainerRow > h1
+{
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+    /* border: 1px solid green; */
+    align-items: center;
+    font-weight: 600;
+}
+
+.myAccountContainerRow > h1 > a
+{
+    border-bottom: 1px solid transparent;
+}
+
+.myAccountContainerRow > h1 > a:hover
+{
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.myAccountContainerRow > h2
+{
+    color: rgb(102, 102, 102);
+}
+
+.myAccountContainerRowLine
+{
+    border-bottom: 1px solid rgb(138, 138, 138);
+}

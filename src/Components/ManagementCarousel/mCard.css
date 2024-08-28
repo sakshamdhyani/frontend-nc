@@ -1,0 +1,11 @@
+.mCardBody
+{
+    height: 70svh;
+    width: 90svw;
+    background-color: white;
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  user-select: none;
+}

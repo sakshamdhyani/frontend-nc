@@ -1,0 +1,102 @@
+.productReviewsBody {
+    background-color: var(--background_color);
+    padding: 20px;
+    border-top: 1px solid rgb(155, 155, 155);
+    margin-bottom: 5rem;
+  }
+  
+  .productReviewsHeading {
+    padding-top: 30px;
+  }
+  
+  .productReviewsTitle {
+    margin-bottom: 3rem;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .reviewForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .reviewForm input,
+  .reviewForm textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .reviewForm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .reviewForm button:hover {
+    background-color: #0056b3;
+  }
+  
+  .productReviewsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .productReviewBox {
+    flex: 1 1 45%;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 1.6rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reviewHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .reviewHeader h3 {
+    margin: 0;
+    font-size: 18px;
+    color: rgb(34, 34, 34);
+  }
+  
+  .reviewDate {
+    font-size: 14px;
+    color: rgb(105, 105, 105);
+  }
+  
+  .reviewText {
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+  }
+  
+  .rating {
+    margin-top: 10px;
+  }
+  
+  .noReviewsMessage {
+    font-size: 18px;
+    color: rgb(105, 105, 105);
+  }
+  
+  @media (max-width: 768px) {
+    .productReviewBox {
+      flex: 1 1 100%;
+    }
+  }
+  

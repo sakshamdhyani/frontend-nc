@@ -1,0 +1,96 @@
+.trackYourRepairRequestBody {
+    margin-top: 4.5rem;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  
+  .trackYourRepairRequestHeading {
+    margin-top: 3rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .trackYourRepairRequestContainer {
+    margin-top: 3rem;
+    min-height: fit-content;
+    background-color: white;
+    border-radius: 1.6rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .trackYourRepairRequestContainerSearchParent {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .trackYourRepairRequestContainerSearch {
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    width: 80%;
+    border-radius: 1rem;
+    height: 3rem;
+    padding: 0 2.5rem 0 1rem;
+    font-size: 1rem;
+  }
+  
+  .trackYourRepairRequestContainerSearchIcon 
+  {
+    margin-top: 1rem;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .orderDetailsContainer 
+  {
+    display: flex;
+    width: 80%;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trackYourRepairRequestProductImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-right: 1.5rem;
+  }
+  
+  .trackYourRepairRequestProductDetails {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    /* border: 1px solid black; */
+  }
+  
+  .trackYourRepairRequestProductName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .trackYourRepairRequestProductStatus {
+    font-size: 1rem;
+    color: #666;
+  }

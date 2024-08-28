@@ -1,0 +1,148 @@
+.registrationFormCheckbox input {
+  margin-right: 10px;
+  position: relative;
+  opacity: 1; /* Ensure visibility */
+  width: auto; /* Auto size for visibility */
+  height: auto; /* Auto size for visibility */
+}
+
+.registrationFormCheckbox label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-input {
+  margin-right: 10px;
+}
+
+.popupContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  position: fixed;
+  top: 70px;
+  z-index: 10000000000;
+}
+
+.registrationFormBody {
+  width: 100%;
+  max-width: 600px;
+  margin: 5rem auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.registrationFormHeading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.registrationFormContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.registrationFormRow {
+  margin-bottom: 15px;
+}
+
+.registrationFormRow label {
+  display: flex;
+  flex-direction: column;
+}
+
+.registrationFormRow h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.required {
+  color: red;
+}
+
+.registrationFormRow input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.infoText {
+  font-size: 14px;
+  color: #666;
+}
+
+.errorText {
+  color: red;
+  font-size: 12px;
+}
+
+.registrationFormCheckboxes {
+  margin-bottom: 15px;
+}
+
+.registrationFormConsentText {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.registrationFormSubmitBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.registrationFormSubmitBtn button {
+  padding: 10px 20px;
+  background-color: var(--main_theme);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+.otpPopup {
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.otpPopup h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.otpPopup input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.otpPopup button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.otpPopup button:hover {
+  background-color: #0056b3;
+}
