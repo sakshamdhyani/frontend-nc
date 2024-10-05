@@ -42,7 +42,7 @@ const FilterCategoryPage = () => {
 
   // Determine products to display based on selected subcategories
   let productsToDisplay = [];
-
+console.log()
   if (!isEmpty(category)) {
     const filteredSubCategories = filterProductsBySubCategories(category.subCategories, filters.selectedSubCategories);
 

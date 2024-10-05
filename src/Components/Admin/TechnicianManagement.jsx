@@ -4,6 +4,7 @@ import { Button, TextField, Dialog, DialogTitle, DialogContent, DialogActions, I
 import { Delete as DeleteIcon, Edit as EditIcon } from '@mui/icons-material';
 import { useSnackbar } from 'notistack';
 
+
 const initialTechnician = {
     id: '',
     firstName: '',

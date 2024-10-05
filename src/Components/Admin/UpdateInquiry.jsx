@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { fetchInquiry, updateInquiry } from '../../redux/adminSlices/popupFormHandler';
 import Loader from "../Loader/Loader"
 
+
 const UpdateInquiry = () => {
     const dispatch = useDispatch();
     const { inquiry , loading } = useSelector((state) => state.popupFormHandler);

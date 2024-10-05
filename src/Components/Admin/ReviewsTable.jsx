@@ -5,6 +5,8 @@ import Rating from '@mui/material/Rating';
 import Actions from './Actions';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteReview, fetchReviews } from '../../redux/adminSlices/reviewHandler';
+import React from 'react';
+
 
 const ReviewsTable = () => {
     const { enqueueSnackbar } = useSnackbar();

@@ -13,19 +13,13 @@ import UpdateProduct from './Components/Admin/UpdateProduct';
 import UserTable from './Components/Admin/UserTable';
 import UpdateUser from './Components/Admin/UpdateUser';
 import ReviewsTable from './Components/Admin/ReviewsTable';
-import ProductPage from './Components/Product Description/ProductPage';
 import LoginPage from './Components/Login Page/LoginPage';
 import RegistrationForm from './Components/Login Page/RegistrationForm';
 import MyAccount from './Components/User Account/MyAccount';
 import EditMyAccount from './Components/User Account/EditMyAccount';
 import AddressBook from './Components/User Account/AddressBook';
-import TrackYourComplaint from './Components/Track Your Complaint/TrackYourComplaint';
-import TrackYourRepairRequest from './Components/Track Your Repair Request/TrackYourRepairRequest';
-import ComplaintRegistration from './Components/Track Your Complaint/ComplaintRegistration';
-import RequestRegistration from './Components/Track Your Repair Request/RequestRegistration';
 import BuyProductPage from './Components/Product Page/BuyProductPage';
 import FilterCategoryPage from './Components/Category Products/FilterCategoryPage';
-import SearchPage from './Components/Search Product/Search Page/SearchPage';
 import NewCategory from './Components/Admin/NewCategory';
 import ComplaintsTable from './Components/Admin/ComplaintsTable';
 import RepairRequestsTable from './Components/Admin/RepairRequestTable';
@@ -36,10 +30,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { loadUser } from './redux/slices/userAuth';
 import ProtectedRoute from './Components/ProtectedRoute';
 import ContactUs from './Components/ContactUs/ContactUs';
-import MyComplaints from './Components/MyComplaints/MyComplaints';
-import MyRequests from './Components/MyRequests/MyRequests';
 import MyOrders from './Components/MyOrders/MyOrders';
-import MediaGallery from './Components/Media/MediaGallery';
 import Cart from './Components/Cart/Cart';
 import Shipping from './Components/Cart/Shipping';
 import OrderConfirm from './Components/Cart/OrderConfirm';
@@ -48,7 +39,6 @@ import OrderSuccess from './Components/Cart/OrderSuccess';
 import AdminLogin from './Components/Admin/Login/Login';
 import UpdateRequest from './Components/Admin/UpdateRequest';
 import UpdateComplaint from './Components/Admin/UpdateComplaint';
-import UserDetailPopup from './Components/UserDetailPopup';
 import HomeCarousel from './Components/Admin/HomeCarousel';
 import AboutUs from './Components/ManagementCarousel/AboutUs';
 // import PrivacyPolicy from './Components/Policy Pages/PrivacyPolicy';
@@ -104,7 +94,6 @@ const App = () => {
 
         <Route path="/buy-product/:id" element={<BuyProductPage />} />
 
-        <Route path="/search" element={<SearchPage />} />
 
 
         <Route path="/editProfile" element={<ProtectedRoute allowedRoles={['customer']}> <EditMyAccount /> </ProtectedRoute>} />
@@ -186,9 +175,7 @@ const App = () => {
         <Route path="/admin/inquiry/:id" element={<ProtectedRoute allowedRoles={['admin']}><Dashboard activeTab={13}><UpdateInquiry/></Dashboard></ProtectedRoute>} />
       
       </Routes>
-
-      <WhatsappIcon/>
-      
+        
       {!isDashboard && <Footer />}
 
       

@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import formatPrice from "../../utils/formatPrice";
+import React from "react";
 
 const PriceSidebar = ({ totalPrice , products }) => {
 

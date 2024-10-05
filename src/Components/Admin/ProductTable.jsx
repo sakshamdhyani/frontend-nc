@@ -6,6 +6,7 @@ import Actions from './Actions';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteProduct, fetchProducts } from '../../redux/adminSlices/productHandler';
 
+
 const ProductTable = () => {
 
     const dispatch = useDispatch();

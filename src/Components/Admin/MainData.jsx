@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchMainData } from '../../redux/adminSlices/mainData';
 import BigLoader from "../Loader/BigLoader"
 
+
 // Register all necessary components
 Chart.register(
     ArcElement,

@@ -17,14 +17,6 @@ const HomePage = () => {
   const { heroCarousel , loading } = useSelector((state) => state.dataFetch);
   const { isAuth } = useSelector((state) => state.userAuth);
 
-  // Default images to use if heroCarousel images are not available
-  const defaultImages = [
-    'default home slider/AC1.jpeg',
-    'default home slider/AC2.jpeg',
-    'default home slider/AC3.jpeg',
-    'default home slider/AC4.jpeg'
-  ];
-
   // Fetch home carousel and deals when the component mounts
   useEffect(() => {
     dispatch(fetchHomeCarousel());
@@ -36,8 +28,6 @@ const HomePage = () => {
     if (heroCarousel && heroCarousel.images && heroCarousel.images.length > 0) {
       const imagesArray = heroCarousel.images.map(image => image.url);
       setSlideImages(imagesArray);
-    } else {
-      setSlideImages(defaultImages);
     }
   }, [heroCarousel]);
 
@@ -77,7 +67,8 @@ const HomePage = () => {
       </Helmet>
 
       {/* Image slider for displaying carousel images */}
-      <ImageSlider slides={slideImages} />
+
+        <ImageSlider slides={slideImages} />
 
       <div className='homePagePaddingBody'>
         {/* Categories section */}

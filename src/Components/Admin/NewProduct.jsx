@@ -9,6 +9,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import { createProduct } from '../../redux/adminSlices/productHandler';
 
 
+
 const NewProduct = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();

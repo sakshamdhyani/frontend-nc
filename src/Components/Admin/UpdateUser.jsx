@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
+import React from 'react';
+
 import { blockUnblockCustomer, fetchCustomer } from '../../redux/adminSlices/customerHandler';
 
 const UpdateUser = () => {

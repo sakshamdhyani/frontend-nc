@@ -9,6 +9,7 @@ import { deleteInquiry, fetchInquiries } from '../../redux/adminSlices/popupForm
 import io from 'socket.io-client';
 import { addNewInquiry } from '../../redux/adminSlices/popupFormHandler';
 
+
 const PopupInquiry = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const dispatch = useDispatch();

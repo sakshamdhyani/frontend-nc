@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
-
+import React from 'react';
 
 const EmptyCart = () => {
     return (

@@ -18,7 +18,7 @@ const Filters = ({ filters, subCategories, onFilterChange }) => {
 
   return (
     <div className="filters">
-      <h3 className="filtersTitle">Filter by Subcategories</h3>
+      <h3 className="filtersTitle">Filter</h3>
       <div className="filterSubCategories">
         {subCategories?.map((subCategory) => (
           <div key={subCategory.name} className="filterCheckbox">

@@ -7,6 +7,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
 
+
 const Actions = ({ id, deleteHandler, name, editRoute }) => {
     const [open, setOpen] = useState(false);
 

@@ -7,6 +7,7 @@ import Loader from '../Loader/Loader';
 import axios from 'axios'; // assuming you use axios for API calls
 import BigLoader from '../Loader/BigLoader';
 
+
 const HomeCarousel = () => {
     const dispatch = useDispatch();
     const { loading, carousel } = useSelector((state) => state.carouselHandler);

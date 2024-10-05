@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addProductsToDeals, deleteDealProduct, fetchDeals } from '../../redux/adminSlices/categoryHandler';
 import BigLoader from '../Loader/BigLoader';
 
+
 const PFYAddProduct = () => {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [subcategories, setSubcategories] = useState([]);

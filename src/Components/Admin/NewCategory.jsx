@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { createCategory, createSubCategory, deleteCategory, deleteSubCategory, fetchCategories} from '../../redux/adminSlices/categoryHandler';
 import { fetchProducts } from '../../redux/adminSlices/productHandler';
 import Loader from '../Loader/Loader';
+
 import BigLoader from '../Loader/BigLoader';
 
 const NewCategory = () => {
@@ -137,7 +138,6 @@ const NewCategory = () => {
                 type="file"
                 multiple
                 onChange={(e) => setCategoryImages(Array.from(e.target.files))}
-                required
                 className="mt-1 block w-full border rounded p-2"
               />
             </div>
